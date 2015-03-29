@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raft</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+<!--   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@flickr" />
+  <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
+  <meta name="twitter:description" content="View the album on Flickr." />
+  <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+  <meta name="twitter:url" content="https://guide-me2.herokuapp.com/" />
+</head>
+ -->
+<body>
+  <div id="top">
+    <header>
+      <nav>
+      <ul>
+        <li><%= link_to 'Home', '/' %></li>
+        <% if current_user%>
+          <li ><%= link_to 'Profile', user_path(current_user.id) %></li>
+          <li ><%= link_to 'Trips', trips_path %></li>
+          <li><%= link_to 'Searches', user_searches_path(id: current_user.id) %></li>
+          <li><%= link_to 'Guides', guides_path %></li>
+          <li><%= link_to 'Sign Out', '/logout' %></li>
+        <% else %>
+          <li><%= link_to 'Log In', '/login' %></li>
+          <li><%= link_to 'Sign Up', new_user_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+      <h1>RAFT</h1>
+      <h1>LOGO</h1>
+      <h1> HERE </h1>
+    </header>
+  </div>
+
+  <%= yield %>
+
+  <footer>
+  </footer>
+</body>
+</html>

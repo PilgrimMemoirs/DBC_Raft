@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/*HEADER*/
+
+  header {
+    display: block;
+    postition: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(asset-path("bokehskyline.JPG"));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+    margin: auto;
+    color: #fff;
+
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+  }
+
+  header h1 {
+    padding-left: 3em;
+  }
+
+/*NAVIGATION*/
+  nav {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav li {
+    display: inline;
+    padding: 2em;
+    line-height: 3em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  nav a:hover {
+    color: #ED4726;
+  }
+
+  nav ul, nav h1{
+      margin: 0px;
+      padding: 0px;
+  }
+
+
+.standard_box {
+  width: 50%;
+  min-height: 500px;
+  position: absolute;
+  margin-top: -250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type="text"], {
+  border:none;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
+  background: none;
+  -webkit-appearance: none;
+  font-size: 2em;
+  width: 30%;
+}
+
+label {
+  font-size: 2em;
+  line-height: 2.5em;
+}
+
+
+.sidebar {
+  position: absolute;
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 5px 5px 0;
+  padding: 30px 0;
+  margin-top: -250px;
+}
+
+.sidebar {
+  padding: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar h3 {
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
